@@ -546,14 +546,16 @@ angular.module('starter.controllers', [])
 
             $('.map-item-info-title').html(data.title);
             $('.map-item-info-price span').html(data.price);
-            $('.map-item-info-bed').html(data.room);
-            $('.map-item-info-contact_phone').html(data.contact_phone);
+            $('.map-item-info-type').html(data.type);
+            $('.map-item-info-huong').html(data.huong);
+            $('.map-item-info-bed').html(data.sophongngu);
+            $('.map-item-info-contact_phone').html(data.dienthoai);
             $('.map-item-info-address').html(data.address);
             $('.map-item-info-des').html(data.details);
             $('.map-item-info-thumb').attr('src', data.avatar);
-            $('.map-item-view-utilities').hide().attr('href', 'javascript:productControlerObj.ShowMoreInfo(' + data.latitude + ',' + data.longitude + ')');
+            //$('.map-item-view-utilities').hide().attr('href', 'javascript:productControlerObj.ShowMoreInfo(' + data.latitude + ',' + data.longitude + ')');
             //$('.map-item-gotoview').attr('href', 'javascript:productControlerObj.ShowDetails("' + data.id + '")');
-            $('.map-item-gotoview').click(function () {
+            $('.map-item-info-board').click(function () {
                 $state.go('tab.map.view', {id: data.id})
             })
 
@@ -649,6 +651,9 @@ angular.module('starter.controllers', [])
 
 })
 
+.controller('MapViewUtilitiesCtrl', function ($scope, $ionicPopup, $state, $timeout, $interval, NodeService, $ionicPopup, $ionicLoading) {
+})
+
 .controller('MapViewCtrl', function ($scope, $ionicPopup, $state, $timeout, $interval, NodeService, $ionicPopup, $ionicLoading) {
     $ionicLoading.show({
         content: 'Loading',
@@ -664,7 +669,19 @@ angular.module('starter.controllers', [])
         $scope.item = data;
         console.log(data);
         $ionicLoading.hide();
-    })
+    });
+
+    $scope.utilities = function () {
+        $state.go('tab.map.view.utilities')
+    }
+
+    $scope.panorama = function () {
+
+    }
+
+    $scope.streetview = function () {
+
+    }
 })
 
 

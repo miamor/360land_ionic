@@ -104,7 +104,7 @@ ion-list .list ion-item:first-child .item-content{padding-right:10px!important}
 
 
 
-.map-item-info-board{position:absolute;z-index:99;bottom:0;left:0;right:0;height:120px;background:#fff;font-size:13px;box-shadow:0 -5px 5px -5px rgba(0,0,0,.07)}
+.map-item-info-board{cursor:pointer;position:absolute;z-index:99;bottom:0;left:0;right:0;height:120px;background:#fff;font-size:13px;box-shadow:0 -5px 5px -5px rgba(0,0,0,.07)}
 .map-item-info-thumb-div, .map-item-info-thumb{position:relative;float:left;height:100%;width:130px;margin-right:5px}
 .map-item-info-title{font-size:16px;line-height:19px;margin:5px 0 1px}
 .map-item-info-price{position:absolute;top:0;left:0;background:#00a65a;color:#fff;padding:0 5px;border-radius:0 0 4px 4px}
@@ -121,6 +121,13 @@ ion-content{bottom:50px!important}
 
 .map-item-thumbs{position:relative;width:100%;height:200px}
 .map-item-thumb-big{position:relative;width:100%;height:100%}
+.map-item-btn{display:inline-block;margin-right:5px;background:#ddd;box-shadow:0 2px 3px rgba(0,0,0,.2);width:30.9%;height:75px;position:relative;cursor:pointer}
+.map-item-btn span{display:block;position:absolute;bottom:0;left:0;right:0;overflow:hidden;text-overflow:ellipsis;padding:5px 8px;background:#fff}
+.map-item-info-more > div{display:inline-block;margin-right:8px}
+
+.marker-label,.marker-utility-label{padding:0 2px;height:15px;border:1px solid #eb3a44;border-radius:2px;background:#fee1d7;*background:rgba(73, 184, 158, 0.3);text-align:center;line-height:13px;*font-weight:300;font-size:9px;color:#eb3a44}
+.marker-label{margin:-7px 0 0 -6px!important}
+.marker-utility-label{width:24px;height:14px;border-color:#eb3a44;background:#fee1d7;line-height:12px;font-weight:400;font-size:10px;color:#eb3a44}
 
 
 /*-===========================ion-tabs ======================================-*/

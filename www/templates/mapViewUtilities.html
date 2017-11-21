@@ -1,10 +1,12 @@
-<ion-view hide-nav-bar="true" hide-back-button="true" name="map" data-tap-disabled="true">
-  <ion-content class="map" ion-content scroll="false" no-bounce>
+<ion-view hide-nav-bar="true" hide-back-button="true" name="map-view-utilities" data-tap-disabled="true">
+  <ion-content class="map-view-utilities" ion-content scroll="false" no-bounce>
     <div id="map" data-tap-disabled="true"></div>
 
     <form class="trip-add trip-filter padding" id="pac-sidebar">
         <div class="trip-from">
-  			<input data-tap-disabled="true" autocomplete="disabled" id="input_location" type="text" name="from" class="form-control" placeholder="Nhập địa điểm *"/>
+  			<select id="radius" name="radius" class="form-control">
+                <option value="200">200m</option>
+            </select>
         </div>
 	</form>
 

@@ -110,6 +110,18 @@ angular.module('starter', ['ionic', 'chart.js', 'starter.controllers', 'starter.
 			}
 		}
 	})
+	.state('tab.map.view.utilities', {
+		url: '/:id/utilities',
+		views: {
+			 // here is the issue, instead of this
+			 // 'tab-posts':{
+			 // we have to use this
+			 'menuContent@tab':{
+				templateUrl: 'templates/mapViewUtilities.html',
+				controller: 'MapViewUtilitiesCtrl'
+			}
+		}
+	})
 
 	.state('tab.account', {
 		url: '/account',
