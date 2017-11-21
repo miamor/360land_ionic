@@ -1,0 +1,25 @@
+<ion-view view-title="Mua chuyến">
+  <ion-content>
+    <div class="list-others">
+      <a ng-click="view({{oneTrip.id}})" class="item item-remove-animate trip-item item-avatar" ng-repeat="oneTrip in trips" type="item-text-wrap">
+        <pricebuy class="trip-pricecoin">
+
+        </pricebuy>
+        <p class="animated fadeIn">
+            <span class="trip-time">{{oneTrip.time}}</span>
+        </p>
+        <h3 class="trip-destinations">
+            <b>{{oneTrip.addressfrom}}</b>
+            <i class="ion-arrow-right-a" ng-show="{{oneTrip.is_one_round}}"></i>
+            <i class="ion-arrow-swap" ng-show="{{oneTrip.is_round}}"></i>
+            <b>{{oneTrip.addressto}}</b>
+        </h3>
+        <div class="trip-info">
+            <span class="trip-seat">{{oneTrip.seat}} chỗ</span>
+            <span class="trip-num_guess">{{oneTrip.num_guess}} khách</span>
+            <span class="trip-is_round">{{oneTrip.is_round_txt}}</span>
+        </div>
+     </a>
+    </div>
+  </ion-content>
+</ion-view>

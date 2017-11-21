@@ -1,0 +1,57 @@
+<ion-view view-title="Chi tiết chuyến">
+  <ion-content>
+    <div class="oneTrip item item-remove-animate trip-item" id="view_trip_{{trip.id}}" type="item-text-wrap">
+        <h3 class="trip-title center">
+            <b>{{trip.addressfrom}}</b>
+            <notround id="trip_icon_{{trip.id}}" class="ion-arrow-right-a" ng-show="{{trip.is_one_round}}"></notround>
+            <round id="trip_icon_{{trip.id}}" class="ion-arrow-swap" ng-show="{{trip.is_round}}"></round>
+            <b>{{trip.addressto}}</b>
+        </h3>
+        <timev class="trip-view-timeleft" id="trip_{{trip.id}}">
+        </timev>
+        <div class="trip-details">
+            <p class="trip-one-detail">
+                Thời gian đón: <b class="trip-time">{{trip.time}}</b>
+            </p>
+            <p class="trip-one-detail">
+                Số chỗ: <b class="trip-seat">{{trip.seat}} chỗ</b>
+            </p>
+            <p class="trip-one-detail">
+                Số khách: <b class="trip-num_guess">{{trip.num_guess}} khách</b>
+            </p>
+            <p class="trip-one-detail">
+                Số chiều: <b class="trip-is_round">{{trip.is_round_txt}}</b>
+            </p>
+            <p class="trip-one-detail">
+                <pricebuyv></pricebuyv>
+            </p>
+            <more class="trip-more ng-hide">
+                <p class="trip-one-detail">
+                    Khách hàng: <name class="trip-name"></name>
+                </p>
+                <p class="trip-one-detail">
+                    Từ: <from class="trip-from"></from>
+                </p>
+                <p class="trip-one-detail">
+                    Đến: <to class="trip-to"></to>
+                </p>
+                <p class="trip-one-detail">
+                    Mã PNR: <pnr class="trip-pnr"></pnr>
+                </p>
+                <p class="trip-one-detail">
+                    Giá khách trả: <price class="trip-price"></price><span class="trip-price">k</span>
+                </p>
+                <p class="trip-one-detail">
+                    Ghi chú: <detailss class="trip-details"></detailss>
+                </p>
+            </more>
+        </div>
+
+        <div class="trip-buy center">
+            <button ng-click="buy({{trip.id}})" class="button button-assertive ng-hide">Mua chuyến</button>
+            <phone class="trip-phone ng-hide"></phone>
+        </div>
+
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,43 @@
+<ion-view hide-nav-bar="true" hide-back-button="true" name="map-view" data-tap-disabled="true">
+  <ion-content class="map-view" ion-content scroll="false" no-bounce>
+    <div id="map" data-tap-disabled="true"></div>
+
+    <form class="trip-add trip-filter padding" id="pac-sidebar">
+        <div class="trip-from">
+  			<input data-tap-disabled="true" autocomplete="disabled" id="input_location" type="text" name="from" class="form-control" placeholder="Nhập địa điểm *"/>
+        </div>
+	</form>
+
+    <div class="map-item-info-board hide">
+        <div class="map-item-info-thumb-div">
+            <img class="map-item-info-thumb" src=""/>
+            <div class="map-item-info-price center">
+                <i class="fa fa-dollar"></i><span></span>
+            </div>
+        </div>
+        <div class="iw-content map-item-info-details">
+            <div class="map-item-info-close"><i class="fa fa-times"></i></div>
+            <h4 class="map-item-info-title iw-title">Place title</h4>
+            <div class="iw-subTitle"><i class="fa fa-map-marker"></i> <span class="map-item-info-address"></span></div>
+            <div class="map-item-info-more">
+                <i class="fa fa-bed"></i> <span class="map-item-info-bed"></span>,
+                <i class="fa fa-phone"></i> <span class="map-item-info-contact_phone"></span>
+            </div>
+
+            <div class="btn-group map-item-info-buttons center">
+                <a class="btn btn-default btn-sm map-item-view-utilities"><i class="fa fa-share-alt"></i> Tiện ich</a>
+                <a class="btn btn-default btn-sm map-item-gotoview"><i class="fa fa-feed"></i> Chi tiết</a>
+            </div>
+
+            <div class="hide">
+                <div class="map-item-info-des"></div>
+                <div class="iw-bottom-gradient"></div>
+            </div>
+            <div class="clearfix"></div>
+
+        </div>
+    </div>
+
+
+  </ion-content>
+</ion-view>

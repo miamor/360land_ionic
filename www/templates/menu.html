@@ -1,0 +1,30 @@
+<ion-side-menus>
+    <ion-side-menu-content>
+
+    <ion-tabs class="tabs-icon-top tabs-positive">
+
+      <ion-tab title="Map" icon="ion-home" href="#/tab/map">
+        <ion-nav-view name="home-tab"></ion-nav-view>
+      </ion-tab>
+
+      <ion-tab title="Trips" icon="ion-ios-information" href="#/tab/trips">
+        <ion-nav-view name="about-tab"></ion-nav-view>
+      </ion-tab>
+
+      <ion-tab title="Logout" icon="ion-ios-world" ui-sref="tabs.logout">
+        <ion-nav-view name="contact-tab"></ion-nav-view>
+      </ion-tab>
+
+    </ion-tabs>
+
+
+    <ion-nav-bar class="bar-stable">
+        <ion-nav-back-button> </ion-nav-back-button>
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+
+</ion-side-menu-content>
+</ion-side-menus>

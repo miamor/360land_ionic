@@ -1,0 +1,14 @@
+<ion-view view-title="{{item.title}}" name="map-view" data-tap-disabled="true">
+  <ion-content class="map-view" ion-content scroll="false" no-bounce>
+
+      <div class="map-item-thumbs">
+          <img class="map-item-thumb-big" src="{{item.thumbs[0]}}"/>
+      </div>
+
+      <div class="map-item-info">
+          <h4>{{item.price}}</h4>
+          <div class="map-item-address"><i class="fa fa-map-marker"></i> {{item.address}}</div>
+          <div class="map-item-details">{{item.details}}</div>
+      </div>
+  </ion-content>
+</ion-view>
